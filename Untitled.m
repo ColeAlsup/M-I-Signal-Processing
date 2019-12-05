@@ -35,7 +35,7 @@ title("Time(S),A2_Y(g)")
 figure(6)
 plot (car1.data(:,1),car1.data(:,7))
 title("Time(S),A2_Z(g)")
-
+word
 
 %%
 figure(7)%%Plot of Bumper Vibration at Higher RPM
