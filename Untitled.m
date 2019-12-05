@@ -46,3 +46,10 @@ t=0:1/fs:ts;% discrete time vector
 figure(13);
 fft11x=fft(car1.data(:,2));
 stem(car1.data(:,1),abs(fft11x)); %plot fft
+%fft A1_Y 1
+fs=1000;%sampling rate
+ts=(length(car1.data(:,1))); %sample time
+t=0:1/fs:ts;% discrete time vector
+figure(14);
+fft11y=fft(car1.data(:,3));
+stem(car1.data(:,1),abs(fft11y)); %plot fft
