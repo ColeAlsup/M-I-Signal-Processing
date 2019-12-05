@@ -39,11 +39,10 @@ title("Time(S),A2_Y(g)")
 figure(12)
 plot (car2.data(:,1),car2.data(:,7))
 title("Time(S),A2_Z(g)")
-
+%fft A1_X 1
 fs=1000;%sampling rate
 ts=(length(car1.data(:,1))); %sample time
 t=0:1/fs:ts;% discrete time vector
 figure(13);
 fft11x=fft(car1.data(:,2));
-f=(0:ts); %x axis of fft frequency vector
-stem(f,abs(fft11x)./length(ts)*2); %plot fft
+stem(car1.data(:,1),abs(fft11x)); %plot fft
